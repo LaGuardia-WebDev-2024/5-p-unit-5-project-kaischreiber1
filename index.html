@@ -1,13 +1,13 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
-[  ] Three Images
+[  yes] <div> and <span>
+[  yes] height: and width:
+[ yes ] margin: and padding: 
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
 [ no ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
@@ -23,8 +23,8 @@ Select ONE Additional Feature to Add
       /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
       .flip-card {
         background-color: transparent;
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 500px;
         border: 1px solid #f1f1f1;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
       }
@@ -66,7 +66,15 @@ Select ONE Additional Feature to Add
         color: red;
         transform: rotateY(180deg);
       }
-      background-color: red
+      .holidays {
+        background-color: white;
+      }
+    
+      .tree {
+        margin: 20px;
+          border: 5px solid red;
+        padding: 5px;
+      }
     </style>
   </head>
   <body>
@@ -76,13 +84,26 @@ Select ONE Additional Feature to Add
           <img
             src="https://everlastingfabric.com/cdn/shop/files/pink-christmas-tree-ornaments-set-5-styles-decor-947_800x.gif?v=1713677820"
             alt="Avatar"
-            style="width: 300px; height: 300px"
+            style="width: 500px; height: 500px"
           />
         </div>
         <div class="flip-card-back">
           <h1>Holiday Party!</h1>
           <p>December 20th!</p>
           <p>Kai's House!</p>
+          <p>
+            Hi everyone and <span class="holidays">happy holidays!</span> I hope
+            your holiday season is going well. Join me at my house for a
+            Christmas party! Dress fornmally!
+          </p>
+          <img
+           class="tree" src="https://hips.hearstapps.com/hmg-prod/images/christmas-tree-ideas-balsam-hill-64c2c47de0c80.jpg"
+            width="100"
+          />
+          <img
+           class="tree" src="https://static.wikia.nocookie.net/lost-cities-keeper/images/a/a8/My_Favorite_Christmas_Traditions_-_Basically_B.jpg"
+            width="100"
+          />
         </div>
       </div>
     </div>
